@@ -25,22 +25,37 @@ const defaultPalette: PaletteOptions = {
   },
 };
 
+const lightPalette: PaletteOptions = {
+  mode: 'light',
+  ...defaultPalette,
+  background: {
+    paper: '#fff',
+    default: '#f2f2f2',
+  },
+  text: {
+    primary: '#161426',
+  },
+};
+
+const darkPalette: PaletteOptions = {
+  mode: 'dark',
+  ...defaultPalette,
+  background: {
+    paper: '#fff',
+    default: '#161426',
+  },
+  text: {
+    primary: '#f2f2f2',
+  },
+};
+
 const typography: TypographyOptions = {
   fontFamily: '"Spoqa Han Sans Neo", sans-serif',
 };
 
 export default function createThemeByMode(isLightMode: boolean) {
-  const palette: PaletteOptions = {
-    mode: isLightMode ? 'light' : 'dark',
-    ...defaultPalette,
-    background: {
-      paper: '#fff',
-      default: isLightMode ? '#f2f2f2' : '#161426',
-    },
-  };
-
   return createTheme({
-    palette,
+    palette: isLightMode ? lightPalette : darkPalette,
     typography,
     components: {
       MuiTypography: {
@@ -52,6 +67,7 @@ export default function createThemeByMode(isLightMode: boolean) {
         ],
         defaultProps: {
           lang: 'ko',
+          color: 'text.primary',
         },
       },
     },
