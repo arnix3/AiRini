@@ -1,5 +1,5 @@
 declare module 'props' {
   interface LayoutProps {
-    children: React.ReactChildren;
+    children: React.ReactChild | React.ReactChild[];
   }
 }
