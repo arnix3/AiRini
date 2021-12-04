@@ -3,6 +3,7 @@ import {
   ThemeProvider,
   StyledEngineProvider,
   useMediaQuery,
+  CssBaseline,
 } from '@mui/material';
 
 import createThemeByMode from '../theme';
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
     </StyledEngineProvider>
