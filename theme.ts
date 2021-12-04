@@ -34,6 +34,7 @@ const lightPalette: PaletteOptions = {
   },
   text: {
     primary: '#161426',
+    secondary: '#f2f2f2',
   },
 };
 
@@ -46,6 +47,7 @@ const darkPalette: PaletteOptions = {
   },
   text: {
     primary: '#f2f2f2',
+    secondary: '#161426',
   },
 };
 
