@@ -29,10 +29,9 @@ const typography: TypographyOptions = {
   fontFamily: '"Spoqa Han Sans Neo", sans-serif',
 };
 
-export default function createThemeByMode(mode: PaletteOptions['mode']) {
-  const isLightMode = mode === 'light';
+export default function createThemeByMode(isLightMode: boolean) {
   const palette: PaletteOptions = {
-    mode,
+    mode: isLightMode ? 'light' : 'dark',
     ...defaultPalette,
     background: {
       paper: '#fff',
