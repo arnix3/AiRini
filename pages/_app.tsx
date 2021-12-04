@@ -6,6 +6,7 @@ import {
 } from '@mui/material';
 
 import createThemeByMode from '../theme';
+import '../styles/global.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const isLightMode = useMediaQuery('(prefers-color-scheme: light)');
