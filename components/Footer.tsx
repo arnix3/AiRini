@@ -7,7 +7,6 @@ function Footer() {
       maxWidth={false}
       sx={{
         width: 1,
-        height: '30vh',
         bgcolor: 'background.paper',
       }}
     >
@@ -17,36 +16,49 @@ function Footer() {
         height={1}
         justifyContent={'space-between'}
         alignContent={'space-between'}
+        gap={4}
       >
         <Grid item>
           <Typography
-            component={'a'}
-            href={'mailto:ab@airini.dev'}
             variant={'body1'}
             color={'text.secondary'}
             lang={'en'}
             className={'external-link'}
           >
-            ab@airini.dev
+            AiRini
           </Typography>
         </Grid>
         <Grid
           item
+          xs={12}
+          sm={6}
           textAlign={{
             xs: 'left',
-            sm: 'left',
-            md: 'right',
+            sm: 'right',
           }}
         >
+          <Typography
+            component={'a'}
+            href={'mailto:ab@airini.dev'}
+            variant={'button'}
+            color={'text.secondary'}
+            lang={'en'}
+            className={'external-link'}
+            fontSize={'1.25rem'}
+          >
+            Email
+          </Typography>
+          <br />
           <Typography
             component={'a'}
             href={'https://github.com/ygnaiih1680'}
             target={'_blank'}
             rel="noreferrer"
-            variant={'body1'}
+            variant={'button'}
             lang={'en'}
             className={'external-link'}
             color={'text.secondary'}
+            fontSize={'1.25rem'}
           >
             Github
           </Typography>
@@ -56,10 +68,11 @@ function Footer() {
             href={'https://www.rocketpunch.com/@tjdwp1999'}
             target={'_blank'}
             rel="noreferrer"
-            variant={'body1'}
+            variant={'button'}
             lang={'en'}
             className={'external-link'}
             color={'text.secondary'}
+            fontSize={'1.25rem'}
           >
             RocketPunch
           </Typography>
@@ -70,21 +83,18 @@ function Footer() {
           </Typography>
           <Typography variant={'body1'} color={'text.secondary'} lang={'en'}>
             Profile image &copy; 2020.{' '}
-            <a
+            <Typography
+              component={'a'}
               href={'https://www.pixiv.net/users/6657532'}
               target={'_blank'}
               rel="noreferrer"
+              variant={'body1'}
+              color={'text.secondary'}
+              lang={'en'}
+              className={'external-link'}
             >
-              <Typography
-                variant={'body1'}
-                color={'text.secondary'}
-                component={'span'}
-                lang={'en'}
-                className={'external-link'}
-              >
-                QuAn_.
-              </Typography>
-            </a>{' '}
+              QuAn_.
+            </Typography>{' '}
             All rights reserved.
           </Typography>
         </Grid>
