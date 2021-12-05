@@ -4,20 +4,18 @@ import { createTheme } from '@mui/material';
 
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
-    gradient: Palette['primary'];
+    gradient: Palette['background'];
   }
 
   interface PaletteOptions {
-    gradient: PaletteOptions['primary'];
+    gradient: PaletteOptions['background'];
   }
 }
 
 const defaultPalette: PaletteOptions = {
   gradient: {
-    light:
+    default:
       'linear-gradient(90deg, rgba(73,176,251,1) 0%, rgba(254,233,227,1) 100%)',
-    main: 'linear-gradient(90deg, rgba(73,176,251,1) 0%, rgba(254,233,227,1) 100%)',
-    dark: 'linear-gradient(90deg, rgba(73,176,251,1) 0%, rgba(254,233,227,1) 100%)',
   },
   primary: {
     main: '#79baf2',
