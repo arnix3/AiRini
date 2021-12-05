@@ -9,6 +9,7 @@ import {
 import createThemeByMode from '../theme';
 import '../styles/global.css';
 import { useMemo } from 'react';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const isLightMode = useMediaQuery('(prefers-color-scheme: light)');
@@ -18,6 +19,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Head>
+          <meta
+            name={'viewport'}
+            content={'width=device-width, initial-scale=1'}
+          />
+          <title>AiRini</title>
+        </Head>
         <Component {...pageProps} />
       </ThemeProvider>
     </StyledEngineProvider>

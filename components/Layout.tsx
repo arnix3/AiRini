@@ -1,14 +1,11 @@
 import { LayoutProps } from 'props';
-
-import Head from 'next/head';
+import Footer from './Footer';
 
 function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Head>
-        <title>AiRini</title>
-      </Head>
       <main>{children}</main>
+      <Footer />
     </>
   );
 }

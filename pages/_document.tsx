@@ -14,10 +14,6 @@ class MyDocument extends Document {
             title={'keywords'}
             content={'AiRini, Front-end developer, Next.js, React.js'}
           />
-          <meta
-            name={'viewport'}
-            content={'width=device-width, initial-scale=1'}
-          />
           <meta name={'theme-color'} content={'#79baf2'} />
           <meta name={'color-scheme'} content={'light dark'} />
         </Head>
