@@ -29,7 +29,7 @@ const lightPalette: PaletteOptions = {
   mode: 'light',
   ...defaultPalette,
   background: {
-    paper: '#fff',
+    paper: '#161426',
     default: '#f2f2f2',
   },
   text: {
