@@ -7,7 +7,7 @@ function Footer() {
       maxWidth={false}
       sx={{
         width: 1,
-        height: '30vmin',
+        height: '30vh',
         bgcolor: 'background.paper',
       }}
     >
