@@ -4,6 +4,7 @@ function Footer() {
   return (
     <Container
       component={'footer'}
+      maxWidth={false}
       sx={{
         width: 1,
         height: '30vmin',
