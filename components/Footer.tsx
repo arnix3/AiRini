@@ -44,7 +44,7 @@ function Footer() {
             color={'text.secondary'}
             lang={'en'}
             className={'external-link'}
-            fontSize={'1.5rem'}
+            fontSize={'1.25rem'}
           >
             Email
           </Typography>
@@ -58,7 +58,7 @@ function Footer() {
             lang={'en'}
             className={'external-link'}
             color={'text.secondary'}
-            fontSize={'1.5rem'}
+            fontSize={'1.25rem'}
           >
             Github
           </Typography>
@@ -72,7 +72,7 @@ function Footer() {
             lang={'en'}
             className={'external-link'}
             color={'text.secondary'}
-            fontSize={'1.5rem'}
+            fontSize={'1.25rem'}
           >
             RocketPunch
           </Typography>
