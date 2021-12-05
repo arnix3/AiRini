@@ -83,21 +83,18 @@ function Footer() {
           </Typography>
           <Typography variant={'body1'} color={'text.secondary'} lang={'en'}>
             Profile image &copy; 2020.{' '}
-            <a
+            <Typography
+              component={'a'}
               href={'https://www.pixiv.net/users/6657532'}
               target={'_blank'}
               rel="noreferrer"
+              variant={'body1'}
+              color={'text.secondary'}
+              lang={'en'}
+              className={'external-link'}
             >
-              <Typography
-                variant={'body1'}
-                color={'text.secondary'}
-                component={'span'}
-                lang={'en'}
-                className={'external-link'}
-              >
-                QuAn_.
-              </Typography>
-            </a>{' '}
+              QuAn_.
+            </Typography>{' '}
             All rights reserved.
           </Typography>
         </Grid>
