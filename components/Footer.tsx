@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 
 function Footer() {
   return (
@@ -39,19 +39,6 @@ function Footer() {
         >
           <Typography
             component={'a'}
-            href={'https://www.rocketpunch.com/@tjdwp1999'}
-            target={'_blank'}
-            rel="noreferrer"
-            variant={'body1'}
-            lang={'en'}
-            className={'external-link'}
-            color={'text.secondary'}
-          >
-            RocketPunch
-          </Typography>
-          <br />
-          <Typography
-            component={'a'}
             href={'https://github.com/ygnaiih1680'}
             target={'_blank'}
             rel="noreferrer"
@@ -61,6 +48,19 @@ function Footer() {
             color={'text.secondary'}
           >
             Github
+          </Typography>
+          <br />
+          <Typography
+            component={'a'}
+            href={'https://www.rocketpunch.com/@tjdwp1999'}
+            target={'_blank'}
+            rel="noreferrer"
+            variant={'body1'}
+            lang={'en'}
+            className={'external-link'}
+            color={'text.secondary'}
+          >
+            RocketPunch
           </Typography>
         </Grid>
         <Grid item xs={12}>
