@@ -7,7 +7,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <Box
       sx={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'grid',
         gridTemplateRows: '1fr auto',
       }}

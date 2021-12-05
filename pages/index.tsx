@@ -1,74 +1,64 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography, useTheme } from '@mui/material';
+import Image from 'next/image';
+import Lottie from 'react-lottie-player';
+
 import Layout from '../components/Layout';
 
+import darkScroll from '../public/lotties/dark-scroll.json';
+import lightScroll from '../public/lotties/light-scroll.json';
+
+const scrollAnimation = {
+  light: lightScroll,
+  dark: darkScroll,
+};
+
 function Home() {
+  const theme = useTheme();
+
   return (
     <Layout>
-      <Typography variant="h1" lang={'en'} align={'center'}>
-        Hello World
-      </Typography>
-      <Grid container spacing={1} justifyContent={'center'}>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'primary.light',
-              width: 1,
-              height: 1,
-              borderRadius: 1,
-            }}
-          />
+      <Container>
+        <Grid container alignItems={'center'} justifyContent={'center'} gap={4}>
+          <Grid item height={'100vh'}>
+            <Grid
+              container
+              alignItems={'center'}
+              justifyContent={'center'}
+              direction={'column'}
+              height={1}
+            >
+              <Grid item className={'selectable__none'}>
+                <Image
+                  src={'/images/profile.jpg'}
+                  priority
+                  width={128}
+                  height={128}
+                  alt={'AiRini profile'}
+                  css={{
+                    borderRadius: '50%',
+                    aspectRatio: '1',
+                  }}
+                />
+              </Grid>
+              <Grid item>
+                <Typography variant={'h1'} lang={'en'} align={'center'}>
+                  AiRini
+                </Typography>
+                <Typography variant={'subtitle1'} lang={'en'} align={'center'}>
+                  Front-end web developer
+                </Typography>
+              </Grid>
+              <Grid item mt={4}>
+                <Lottie
+                  animationData={scrollAnimation[theme.palette.mode]}
+                  loop
+                  play
+                />
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'primary.main',
-              width: 1,
-              height: 1,
-              borderRadius: 1,
-            }}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'primary.dark',
-              width: 1,
-              height: 200,
-              borderRadius: 1,
-            }}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'secondary.light',
-              width: 1,
-              height: 200,
-              borderRadius: 1,
-            }}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'secondary.main',
-              width: 1,
-              height: 1,
-              borderRadius: 1,
-            }}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{
-              bgcolor: 'secondary.dark',
-              width: 1,
-              height: 1,
-              borderRadius: 1,
-            }}
-          />
-        </Grid>
-      </Grid>
+      </Container>
     </Layout>
   );
 }
