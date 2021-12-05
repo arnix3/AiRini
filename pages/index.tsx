@@ -57,6 +57,11 @@ function Home() {
               </Grid>
             </Grid>
           </Grid>
+          <Grid xs={12} item height={'50vh'}>
+            <Typography variant={'h2'} lang={'en'} align={'center'}>
+              COMMING SOON!
+            </Typography>
+          </Grid>
         </Grid>
       </Container>
     </Layout>
