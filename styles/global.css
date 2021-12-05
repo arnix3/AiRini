@@ -45,3 +45,23 @@
     url('/fonts/SpoqaHanSansNeo-Thin.woff') format('woff'),
     url('/fonts/SpoqaHanSansNeo-Thin.ttf') format('truetype');
 }
+
+.clickable {
+    cursor: pointer;
+}
+
+.selectable__none {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
