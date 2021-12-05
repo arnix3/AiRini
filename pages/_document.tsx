@@ -5,13 +5,13 @@ class MyDocument extends Document {
     return (
       <Html lang={'ko'}>
         <Head>
-          <meta title={'author'} content={'AiRini'} />
+          <meta name={'author'} content={'AiRini'} />
           <meta
-            title={'description'}
+            name={'description'}
             content={'안녕하세요. 프론트엔드 개발자 AiRini입니다.'}
           />
           <meta
-            title={'keywords'}
+            name={'keywords'}
             content={'AiRini, Front-end developer, Next.js, React.js'}
           />
           <meta name={'theme-color'} content={'#79baf2'} />
