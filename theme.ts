@@ -78,7 +78,7 @@ export default function createThemeByMode(isLightMode: boolean) {
         variants: [
           {
             props: { lang: 'en' },
-            style: { fontFamily: 'titillium-web, sans-serif' },
+            style: { fontFamily: 'Titillium Web, sans-serif' },
           },
         ],
         defaultProps: {
