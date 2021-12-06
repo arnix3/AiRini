@@ -43,7 +43,7 @@ function Home() {
             >
               <Grid item className={'selectable__none'}>
                 <Image
-                  src={'/images/profile.jpg'}
+                  src={'/images/profile.webp'}
                   priority
                   width={128}
                   height={128}
