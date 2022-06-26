@@ -78,7 +78,7 @@ function Home() {
                     },
                   }}
                 >
-                  Front-end web developer
+                  Web Front-end developer
                 </Typography>
               </Grid>
             </Grid>
