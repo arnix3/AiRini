@@ -96,7 +96,7 @@ function Home() {
           </Grid>
           <Grid xs={12} item height={'50vh'}>
             <Typography variant={'h2'} lang={'en'} align={'center'}>
-              COMMING SOON!
+              COMING SOON!
             </Typography>
           </Grid>
         </Grid>
