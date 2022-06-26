@@ -67,22 +67,6 @@ function Footer() {
           <Typography variant={'body1'} color={'text.secondary'} lang={'en'}>
             &copy; 2021. AiRini. All rights reserved.
           </Typography>
-          <Typography variant={'body1'} color={'text.secondary'} lang={'en'}>
-            Profile image &copy; 2020.{' '}
-            <Typography
-              component={'a'}
-              href={'https://www.pixiv.net/users/6657532'}
-              target={'_blank'}
-              rel="noreferrer"
-              variant={'body1'}
-              color={'text.secondary'}
-              lang={'en'}
-              className={'external-link'}
-            >
-              QuAn_.
-            </Typography>{' '}
-            All rights reserved.
-          </Typography>
         </Grid>
       </Grid>
     </Container>

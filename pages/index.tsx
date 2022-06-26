@@ -1,5 +1,4 @@
 import { Container, Grid, Typography, useTheme } from '@mui/material';
-import Image from 'next/image';
 import Lottie from 'react-lottie-player';
 
 import Layout from '../components/Layout';
@@ -41,21 +40,6 @@ function Home() {
                 },
               }}
             >
-              <Grid item className={'selectable__none'}>
-                <Image
-                  src={'/images/profile.webp'}
-                  alt={''}
-                  role={'presentation none'}
-                  aria-hidden={true}
-                  priority
-                  width={128}
-                  height={128}
-                  css={{
-                    borderRadius: '50%',
-                    aspectRatio: '1',
-                  }}
-                />
-              </Grid>
               <Grid item>
                 <Typography
                   variant={'h1'}
