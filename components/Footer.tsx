@@ -62,20 +62,6 @@ function Footer() {
           >
             Github
           </Typography>
-          <br />
-          <Typography
-            component={'a'}
-            href={'https://www.rocketpunch.com/@tjdwp1999'}
-            target={'_blank'}
-            rel="noreferrer"
-            variant={'button'}
-            lang={'en'}
-            className={'external-link'}
-            color={'text.secondary'}
-            fontSize={'1.25rem'}
-          >
-            RocketPunch
-          </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography variant={'body1'} color={'text.secondary'} lang={'en'}>
