@@ -44,10 +44,12 @@ function Home() {
               <Grid item className={'selectable__none'}>
                 <Image
                   src={'/images/profile.webp'}
+                  alt={''}
+                  role={'presentation none'}
+                  aria-hidden={true}
                   priority
                   width={128}
                   height={128}
-                  alt={'AiRini profile'}
                   css={{
                     borderRadius: '50%',
                     aspectRatio: '1',
